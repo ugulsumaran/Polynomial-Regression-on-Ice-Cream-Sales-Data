@@ -31,7 +31,7 @@ The data illustrates a non-linear relationship — as temperature increases, ice
 
 3. Model Implementation
 - Builds a Linear Regression baseline model
-- Creates a Polynomial Regression model using PolynomialFeatures and LinearRegression
+- Creates a Polynomial Regression model fitted for degrees 1 to 5 using PolynomialFeatures and LinearRegression
 - Uses a pipeline for cleaner model building
 
 4. Model Evaluation
@@ -44,11 +44,35 @@ The data illustrates a non-linear relationship — as temperature increases, ice
 - scikit-learn — polynomial features, regression, evaluation
 
 ## How to Run
+
+1. Clone the repository:
  ```bash
-git clone https://github.com/yourusername/clear_icecream-PolynomialReg.git
-cd clear_icecream-PolynomialReg
-jupyter notebook clear_icecream_PolynomialReg.ipynb
+git clone https://github.com/yourusername/icecream-polynomial-regression.git
 ```
+
+2. Navigate to the directory:
+ ```bash
+cd icecream-polynomial-regression
+```
+
+3. Open the Jupyter Notebook:
+ ```bash
+jupyter notebook icecream_PolynomialReg.ipynb
+```
+
+4. Ensure icecream.csv is in the same directory.
+
+5. Run the cells step-by-step. Key functions:
+- check_df(): Data overview.
+- fit_polynomial_regression(): Fits models.
+- evaluate_models(): Computes metrics.
+- plot_linear_vs_polynomial(): Visualizes fits (main plot in the notebook).
+- run_polynomial_analysis(): Runs everything (commented out by default).
+
+
+
+
+
 ## Results
 - The polynomial regression model (degree 2 or 3) fits the data significantly better than linear regression.  
 - R² score improves notably, and the fitted curve captures the rise in sales at higher temperatures.  
