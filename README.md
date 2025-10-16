@@ -47,29 +47,33 @@ The data illustrates a non-linear relationship — as temperature increases, ice
 
 1. Clone the repository:
  ```bash
-git clone https://github.com/yourusername/icecream-polynomial-regression.git
+git clone https://github.com/ugulsumaran/Polynomial-Regression-on-Ice-Cream-Sales-Data.git
 ```
 
 2. Navigate to the directory:
  ```bash
-cd icecream-polynomial-regression
+cd Polynomial-Regression-on-Ice-Cream-Sales-Data
 ```
-
-3. Open the Jupyter Notebook:
+3. Install required dependencies: Ensure you have Python installed, then install the necessary libraries using pip:
  ```bash
-jupyter notebook icecream_PolynomialReg.ipynb
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 ```
 
-4. Ensure icecream.csv is in the same directory.
+4. Launch Jupyter Notebook: Start the Jupyter Notebook server:
+ ```bash
+jupyter notebook
+```
 
-5. Run the cells step-by-step. Key functions:
-- check_df(): Data overview.
-- fit_polynomial_regression(): Fits models.
-- evaluate_models(): Computes metrics.
-- plot_linear_vs_polynomial(): Visualizes fits (main plot in the notebook).
-- run_polynomial_analysis(): Runs everything (commented out by default).
+5. Open the notebook: In the Jupyter interface, navigate to and open `clear_icecream_PolynomialReg.ipynb`.
 
+6. Ensure dataset availability: Verify that `icecream.csv` is in the same directory as the notebook.
 
+7. Run the notebook: Execute the cells sequentially. Key functions include:
+- `check_df()`: Displays dataset overview (shape, types, head/tail, missing values).
+- `fit_polynomial_regression()`: Fits polynomial regression models for degrees 1 to 5.
+- `evaluate_models()`: Computes R², MSE, and RMSE for model evaluation.
+- `plot_linear_vs_polynomial()`: Visualizes linear vs. polynomial model fits.
+- `run_polynomial_analysis()`: Executes the full analysis (commented out by default).
 
 
 
